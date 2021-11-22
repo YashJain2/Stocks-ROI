@@ -6,7 +6,7 @@ import pandas as pd
 st.title('Compare ROI Of Stocks')
 
 # creating a tuple
-tickers = ('TSLA', 'AAPL', 'MSFT', 'BTC-USD', 'ETH-USD','TTM','RELIANCE.NS','TATAMOTORS.NS')
+tickers = ('TSLA', 'AAPL', 'MSFT', 'BTC-USD', 'ETH-USD','TTM','RELIANCE.NS','TATAMOTORS.NS','SBIN')
 
 #dropdown lists of stocks
 dropdown = st.multiselect('Choose your stocks', tickers)
