@@ -12,8 +12,8 @@ tickers = ('TSLA', 'AAPL', 'MSFT', 'BTC-USD', 'ETH-USD','TTM','RELIANCE.NS','TAT
 dropdown = st.multiselect('Choose your stocks', tickers)
 
 
-start =st.date_input('Start',value=pd.to_datetime('2021-01-01'))
-end=st.date_input('End', value =pd.to_datetime('2021-09-15'))
+start =st.date_input('Start',value=pd.to_datetime('2021-08-01'))
+end=st.date_input('End', value =pd.to_datetime('2021-11-20'))
 
 def relative_returns(df):
     rel=df.pct_change()
