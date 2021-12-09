@@ -23,14 +23,8 @@ def relative_returns(df):
     return cumret
 
 
-
-
 if len(dropdown)>0:
     # df=yf.download(dropdown,start,end)['Adj Close']
     df=relative_returns(yf.download(dropdown,start,end)['Adj Close'])
     st.header('Returns of {}'.format(dropdown))
-    st.line_chart(df) 
-
-
-
-
+    st.line_chart(df)
