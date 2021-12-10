@@ -84,7 +84,7 @@ data_training_array=scaler.fit_transform(data_training)
 
 # load my model
 
-model=load_model('keras_mod.h5')
+model=load_model('ITC.h5')
 
 
 
