@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import pandas_datareader as data
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 import streamlit as st
 from sklearn.preprocessing import MinMaxScaler
 
@@ -84,7 +84,7 @@ data_training_array=scaler.fit_transform(data_training)
 
 # load my model
 
-model=load_model('./ITC.h5')
+model=load_model('ITC.h5',compile = False)
 
 
 
